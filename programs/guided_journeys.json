@@ -1,0 +1,91 @@
+{
+  "$schema": "https://eirafocus.com/schemas/programs-v1.json",
+  "version": 1,
+  "description": "Single-session guided meditation journeys with timestamped text prompts. v1.0 ships text-only; voice narration is added in v1.1 by adding voice_clip_id to each prompt.",
+  "journeys": [
+    {
+      "id": "body_scan",
+      "name": "Body Scan",
+      "description": "A 10-minute journey focusing on every part of your body.",
+      "duration_seconds": 600,
+      "tier": "free",
+      "prompts": [
+        { "at_seconds": 0,   "text": "Find a comfortable seat. Close your eyes. Take a deep breath. We will begin our body scan journey." },
+        { "at_seconds": 15,  "text": "Bring your full attention to the soles of your feet. Notice any tingling or warmth." },
+        { "at_seconds": 35,  "text": "Move your focus up to your ankles. Let them go soft and heavy." },
+        { "at_seconds": 55,  "text": "Slowly move up to your shins and calves. Let the muscles relax." },
+        { "at_seconds": 80,  "text": "Bring awareness to your knees. Notice any tension, and let it dissolve." },
+        { "at_seconds": 105, "text": "Now focus on your thighs. Feel the weight of them against the seat." },
+        { "at_seconds": 130, "text": "Shift your focus to your hips and lower back. Imagine a warm light loosening the muscles there." },
+        { "at_seconds": 160, "text": "Now move to your stomach. Feel it rise and fall with each breath." },
+        { "at_seconds": 190, "text": "Bring awareness to your chest. Feel the expansion of your lungs." },
+        { "at_seconds": 220, "text": "Focus on your hands and fingers. Let them curl naturally. Release all effort." },
+        { "at_seconds": 250, "text": "Move up to your wrists and forearms. Soften them." },
+        { "at_seconds": 280, "text": "Focus on your shoulders. Let them drop away from your ears." },
+        { "at_seconds": 310, "text": "Bring attention to your neck. Move it slightly if it feels tight." },
+        { "at_seconds": 340, "text": "Finally, focus on your face and head. Soften your eyes. Relax your brow." },
+        { "at_seconds": 380, "text": "Feel your whole body as one. Stable. Calm. At peace." },
+        { "at_seconds": 450, "text": "Stay with this feeling of total relaxation. Breathe naturally." },
+        { "at_seconds": 580, "text": "We are now concluding the body scan. When you are ready, gently open your eyes." }
+      ]
+    },
+    {
+      "id": "loving_kindness",
+      "name": "Loving-Kindness (Metta)",
+      "description": "Cultivate compassion for yourself and others.",
+      "duration_seconds": 300,
+      "tier": "plus",
+      "prompts": [
+        { "at_seconds": 0,   "text": "Find a comfortable position. We will begin by focusing on ourselves." },
+        { "at_seconds": 15,  "text": "Silently repeat: May I be happy. May I be healthy. May I be safe. May I live with ease." },
+        { "at_seconds": 45,  "text": "Notice the feeling of warmth in your heart center as you say these words." },
+        { "at_seconds": 75,  "text": "Now, think of someone you love. Visualize them clearly. See them smiling." },
+        { "at_seconds": 105, "text": "Direct these same thoughts to them: May you be happy. May you be healthy. May you be safe." },
+        { "at_seconds": 150, "text": "Now, think of a neutral person. Someone you see but don't know well." },
+        { "at_seconds": 180, "text": "Wish them well: May you be happy. May you be safe. May you live with ease." },
+        { "at_seconds": 220, "text": "Now, expand this to all beings everywhere. Without exception." },
+        { "at_seconds": 250, "text": "May all beings be happy. May all beings be free from suffering." },
+        { "at_seconds": 285, "text": "Rest in this feeling of universal compassion as we conclude." }
+      ]
+    },
+    {
+      "id": "so_hum_mantra",
+      "name": "Mantra: So-Hum",
+      "description": "A rhythmic meditation using the mantra of being.",
+      "duration_seconds": 300,
+      "tier": "plus",
+      "prompts": [
+        { "at_seconds": 0,   "text": "We will use the mantra So-Hum. It means 'I am that'." },
+        { "at_seconds": 15,  "text": "As you inhale, silently say 'So'. As you exhale, silently say 'Hum'." },
+        { "at_seconds": 30,  "text": "Inhale... So. Exhale... Hum." },
+        { "at_seconds": 50,  "text": "Continue the rhythm. So... Hum." },
+        { "at_seconds": 75,  "text": "If your mind wanders, gently bring it back to the sound. So... Hum." },
+        { "at_seconds": 100, "text": "Breathe in 'So'. Breathe out 'Hum'." },
+        { "at_seconds": 125, "text": "So... Hum. Let the sound fill your mind." },
+        { "at_seconds": 150, "text": "I am that. So... Hum." },
+        { "at_seconds": 180, "text": "So... Hum. Calm and steady." },
+        { "at_seconds": 210, "text": "Rest in the silence of the mantra. So... Hum." },
+        { "at_seconds": 240, "text": "So... Hum." },
+        { "at_seconds": 285, "text": "Gently let go of the mantra. Sit in the quiet for a moment before finishing." }
+      ]
+    },
+    {
+      "id": "vipassana_insight",
+      "name": "Vipassana (Insight)",
+      "description": "Mindfulness of thoughts and sensations.",
+      "duration_seconds": 600,
+      "tier": "plus",
+      "prompts": [
+        { "at_seconds": 0,   "text": "Welcome to this Vipassana session. Settle into your breath." },
+        { "at_seconds": 20,  "text": "Observe the breath exactly as it is. Don't try to change it." },
+        { "at_seconds": 60,  "text": "Notice the sensation of the air entering and leaving your nostrils." },
+        { "at_seconds": 120, "text": "When a thought arises, simply label it as 'thinking' and return to the breath." },
+        { "at_seconds": 180, "text": "Notice any physical sensations in the body without judgment." },
+        { "at_seconds": 240, "text": "Is there tightness? Warmth? Simply observe its changing nature." },
+        { "at_seconds": 300, "text": "Everything is in flux. Breath, thoughts, sensations. All arising and passing." },
+        { "at_seconds": 420, "text": "Stay present with this flow of experience." },
+        { "at_seconds": 540, "text": "Rest in pure awareness until the bell sounds." }
+      ]
+    }
+  ]
+}

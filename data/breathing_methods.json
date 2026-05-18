@@ -1,0 +1,36 @@
+{
+  "$schema": "https://eirafocus.com/schemas/breathing_methods-v1.json",
+  "version": 1,
+  "methods": [
+    {
+      "id": "equal",
+      "name": "Equal Breathing",
+      "description": "Inhale and exhale for the same duration to balance your energy.",
+      "inhale_seconds": 4,
+      "hold_after_inhale_seconds": 0,
+      "exhale_seconds": 4,
+      "hold_after_exhale_seconds": 0,
+      "tier": "free"
+    },
+    {
+      "id": "box",
+      "name": "Box Breathing",
+      "description": "Used by Navy SEALs to stay calm under pressure.",
+      "inhale_seconds": 4,
+      "hold_after_inhale_seconds": 4,
+      "exhale_seconds": 4,
+      "hold_after_exhale_seconds": 4,
+      "tier": "free"
+    },
+    {
+      "id": "four_seven_eight",
+      "name": "4-7-8 Breathing",
+      "description": "A relaxing technique that can help you fall asleep.",
+      "inhale_seconds": 4,
+      "hold_after_inhale_seconds": 7,
+      "exhale_seconds": 8,
+      "hold_after_exhale_seconds": 0,
+      "tier": "free"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://eirafocus.com/schemas/text_prompts-v1.json",
+  "version": 1,
+  "description": "Default text prompts shown at intervals during silent text-prompt guided meditation. Used by the free tier when no voice content is available.",
+  "default_silent_prompts": [
+    { "at_seconds": 0,   "text": "Focus on your breath." },
+    { "at_seconds": 60,  "text": "Let go of any tension in your shoulders." },
+    { "at_seconds": 120, "text": "Acknowledge your thoughts, then let them pass." },
+    { "at_seconds": 180, "text": "Bring your attention back to the present moment." },
+    { "at_seconds": 240, "text": "Inhale peace, exhale stress." }
+  ]
+}

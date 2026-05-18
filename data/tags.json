@@ -1,0 +1,23 @@
+{
+  "$schema": "https://eirafocus.com/schemas/tags-v1.json",
+  "version": 1,
+  "session_tags": [
+    { "id": "calm",        "label": "Calm",        "icon": "spa" },
+    { "id": "focused",     "label": "Focused",     "icon": "gps_fixed" },
+    { "id": "stressed",    "label": "Stressed",    "icon": "bolt" },
+    { "id": "sleepy",      "label": "Sleepy",      "icon": "bedtime" },
+    { "id": "energized",   "label": "Energized",   "icon": "local_fire_department" },
+    { "id": "anxious",     "label": "Anxious",     "icon": "waves" },
+    { "id": "grateful",    "label": "Grateful",    "icon": "favorite" },
+    { "id": "morning",     "label": "Morning",     "icon": "wb_sunny" },
+    { "id": "evening",     "label": "Evening",     "icon": "nightlight" },
+    { "id": "quick_break", "label": "Quick Break", "icon": "coffee" }
+  ],
+  "mood_levels": [
+    { "value": 1, "label": "Awful", "color": "#EF5350" },
+    { "value": 2, "label": "Bad",   "color": "#FF7043" },
+    { "value": 3, "label": "Okay",  "color": "#FFB300" },
+    { "value": 4, "label": "Good",  "color": "#66BB6A" },
+    { "value": 5, "label": "Great", "color": "#2E7D32" }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://eirafocus.com/schemas/manifest-v1.json",
+  "manifest_version": 1,
+  "content_version": "0.1.0",
+  "updated_at": "2026-05-18",
+  "description": "Top-level content bundle manifest. Apps pin a manifest_version (major) and lazily fetch content listed below. Audio files cached on first play.",
+  "data": {
+    "breathing_methods": "data/breathing_methods.json",
+    "quotes":            "data/quotes.json",
+    "tags":              "data/tags.json",
+    "text_prompts":      "data/text_prompts.json"
+  },
+  "programs": {
+    "guided_journeys": "programs/guided_journeys.json"
+  },
+  "audio": {
+    "legacy": {
+      "tier": "legacy",
+      "note": "v1 Flutter procedural/recorded sounds, kept for reference only. Will not ship in v2.0.",
+      "files": [
+        "audio/legacy/bell.mp3",
+        "audio/legacy/creek.mp3",
+        "audio/legacy/forest.mp3",
+        "audio/legacy/rain.mp3"
+      ]
+    },
+    "ambient": {
+      "tier": "free_and_plus",
+      "note": "Pixabay-sourced loops. Files added in subsequent commits.",
+      "files": []
+    },
+    "voice": {
+      "tier": "free_and_plus",
+      "note": "Azure Neural HD TTS pre-rendered clips. Voices: en-US-Ava, en-US-Andrew, en-IN-Neerja, en-IN-Prabhat. Files added in subsequent commits.",
+      "files": []
+    }
+  },
+  "branding": {
+    "logo":         "branding/logo.png",
+    "logo_no_bg":   "branding/logo-no-bg.png",
+    "logo_white_bg": "branding/logo-white-bg.png"
+  }
+}
