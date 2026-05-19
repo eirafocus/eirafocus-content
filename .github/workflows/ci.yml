@@ -39,22 +39,25 @@ jobs:
           set -e
           python3 <<'PY'
           import json, os, sys
+
           with open('manifest.json') as f:
               m = json.load(f)
-          missing = []
-          def walk(obj, path):
-              if isinstance(obj, str) and ('/' in obj) and not obj.startswith('http'):
-                  if not os.path.exists(obj):
-                      missing.append((path, obj))
-              elif isinstance(obj, dict):
-                  for k, v in obj.items(): walk(v, f"{path}.{k}")
-              elif isinstance(obj, list):
-                  for i, v in enumerate(obj): walk(v, f"{path}[{i}]")
-          walk(m, '$')
+
+          # Collect candidate file paths only from known location-shaped keys.
+          # Avoids false-positives on descriptive "note" strings that happen to contain "/".
+          paths = []
+          paths.extend(m.get('data', {}).values())
+          paths.extend(m.get('programs', {}).values())
+          paths.extend(m.get('branding', {}).values())
+          for section in m.get('audio', {}).values():
+              if isinstance(section, dict):
+                  paths.extend(section.get('files', []) or [])
+
+          missing = [p for p in paths if isinstance(p, str) and not os.path.exists(p)]
           if missing:
-              for p, f in missing:
-                  print(f"::error::Manifest references missing file: {f} (at {p})")
+              for p in missing:
+                  print(f"::error::Manifest references missing file: {p}")
               sys.exit(1)
-          print(f"manifest.json: all path references resolve")
+          print(f"manifest.json: {len(paths)} path references all resolve")
           PY
         shell: bash
