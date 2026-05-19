@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: validate content
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate JSON syntax
+        run: |
+          set -e
+          fail=0
+          # shellcheck disable=SC2044
+          for f in $(find . -name '*.json' -not -path './node_modules/*' -not -path './.git/*'); do
+            if ! python3 -m json.tool < "$f" > /dev/null; then
+              echo "::error file=$f::Invalid JSON"
+              fail=1
+            fi
+          done
+          exit $fail
+        shell: bash
+
+      - name: Check manifest references resolve
+        run: |
+          set -e
+          python3 <<'PY'
+          import json, os, sys
+          with open('manifest.json') as f:
+              m = json.load(f)
+          missing = []
+          def walk(obj, path):
+              if isinstance(obj, str) and ('/' in obj) and not obj.startswith('http'):
+                  if not os.path.exists(obj):
+                      missing.append((path, obj))
+              elif isinstance(obj, dict):
+                  for k, v in obj.items(): walk(v, f"{path}.{k}")
+              elif isinstance(obj, list):
+                  for i, v in enumerate(obj): walk(v, f"{path}[{i}]")
+          walk(m, '$')
+          if missing:
+              for p, f in missing:
+                  print(f"::error::Manifest references missing file: {f} (at {p})")
+              sys.exit(1)
+          print(f"manifest.json: all path references resolve")
+          PY
+        shell: bash

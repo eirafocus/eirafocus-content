@@ -1,0 +1,23 @@
+name: Feature suggestion
+description: An idea for something new or changed
+labels: [enhancement]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What
+      placeholder: One or two sentences. What should the app do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      placeholder: What problem does it solve, or what does it make easier?
+
+  - type: textarea
+    id: mockup
+    attributes:
+      label: Mockup or example (optional)
+      placeholder: Sketch, screenshot from another app, or just words.
