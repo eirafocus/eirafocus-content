@@ -1,0 +1,58 @@
+{
+  "$schema": "https://eirafocus.com/schemas/multi-day-programs-v1.json",
+  "version": 1,
+  "programs": [
+    {
+      "id": "first_seven_days",
+      "name": "First 7 Days",
+      "description": "A gentle introduction to breathing and sitting.",
+      "tier": "free",
+      "days": [
+        { "day": 1, "title": "Arrive", "intention": "Just show up.", "session": { "kind": "breathing", "method_id": "equal", "duration_seconds": 184 } },
+        { "day": 2, "title": "Make Space", "intention": "Notice without fixing.", "session": { "kind": "silent", "duration_seconds": 300 } },
+        { "day": 3, "title": "Find a Rhythm", "intention": "Let structure make room for ease.", "session": { "kind": "breathing", "method_id": "box", "duration_seconds": 240 } },
+        { "day": 4, "title": "Come Back to the Body", "intention": "Meet each sensation with curiosity.", "session": { "kind": "meditation", "journey_id": "body_scan" } },
+        { "day": 5, "title": "Lengthen the Pause", "intention": "Stay for one breath longer.", "session": { "kind": "breathing", "method_id": "equal", "duration_seconds": 304 } },
+        { "day": 6, "title": "Sit with Quiet", "intention": "Let thoughts pass through.", "session": { "kind": "silent", "duration_seconds": 420 } },
+        { "day": 7, "title": "Begin Again", "intention": "Carry this steadiness forward.", "session": { "kind": "meditation", "journey_id": "body_scan" } }
+      ]
+    },
+    {
+      "id": "focus_seven_days",
+      "name": "7 Days of Focus",
+      "description": "Clear your mind before deep work.",
+      "tier": "plus",
+      "days": [
+        { "day": 1, "title": "Clear the Desk", "intention": "Choose one thing that matters.", "session": { "kind": "breathing", "method_id": "box", "duration_seconds": 240 } },
+        { "day": 2, "title": "Hold One Thread", "intention": "Return gently when attention wanders.", "session": { "kind": "meditation", "journey_id": "so_hum_mantra" } },
+        { "day": 3, "title": "Steady Energy", "intention": "Find effort without strain.", "session": { "kind": "breathing", "method_id": "equal", "duration_seconds": 304 } },
+        { "day": 4, "title": "See Distraction", "intention": "Notice the impulse before following it.", "session": { "kind": "meditation", "journey_id": "vipassana_insight" } },
+        { "day": 5, "title": "Deepen", "intention": "Stay with the next deliberate breath.", "session": { "kind": "breathing", "method_id": "box", "duration_seconds": 480 } },
+        { "day": 6, "title": "Unbroken Time", "intention": "Practice quiet concentration.", "session": { "kind": "silent", "duration_seconds": 600 } },
+        { "day": 7, "title": "Carry Focus Forward", "intention": "Begin the work from stillness.", "session": { "kind": "meditation", "journey_id": "vipassana_insight" } }
+      ]
+    },
+    {
+      "id": "sleep_fourteen_days",
+      "name": "14 Days of Sleep",
+      "description": "Build a quieter transition into rest.",
+      "tier": "plus",
+      "days": [
+        { "day": 1, "title": "Signal Rest", "intention": "Let the day be finished.", "session": { "kind": "breathing", "method_id": "four_seven_eight", "duration_seconds": 228 } },
+        { "day": 2, "title": "Soften the Body", "intention": "Release effort from head to toe.", "session": { "kind": "meditation", "journey_id": "body_scan" } },
+        { "day": 3, "title": "Quiet the Edges", "intention": "Make the exhale unhurried.", "session": { "kind": "breathing", "method_id": "four_seven_eight", "duration_seconds": 304 } },
+        { "day": 4, "title": "Sit Without Solving", "intention": "Nothing needs an answer tonight.", "session": { "kind": "silent", "duration_seconds": 300 } },
+        { "day": 5, "title": "Meet Yourself Kindly", "intention": "End the day without judgment.", "session": { "kind": "meditation", "journey_id": "loving_kindness" } },
+        { "day": 6, "title": "Long Exhale", "intention": "Let each breath lower the volume.", "session": { "kind": "breathing", "method_id": "four_seven_eight", "duration_seconds": 380 } },
+        { "day": 7, "title": "A Week of Letting Go", "intention": "Notice what already feels easier.", "session": { "kind": "meditation", "journey_id": "body_scan" } },
+        { "day": 8, "title": "Return to Rhythm", "intention": "Begin the second week softly.", "session": { "kind": "breathing", "method_id": "four_seven_eight", "duration_seconds": 304 } },
+        { "day": 9, "title": "Set Down the Story", "intention": "Thoughts can wait until morning.", "session": { "kind": "silent", "duration_seconds": 420 } },
+        { "day": 10, "title": "Warmth", "intention": "Offer yourself an easy goodnight.", "session": { "kind": "meditation", "journey_id": "loving_kindness" } },
+        { "day": 11, "title": "Slow the Current", "intention": "Breathe beneath the noise.", "session": { "kind": "breathing", "method_id": "four_seven_eight", "duration_seconds": 456 } },
+        { "day": 12, "title": "Rest in Sensation", "intention": "Feel the bed carrying your weight.", "session": { "kind": "meditation", "journey_id": "body_scan" } },
+        { "day": 13, "title": "Nothing to Do", "intention": "Let stillness be enough.", "session": { "kind": "silent", "duration_seconds": 600 } },
+        { "day": 14, "title": "Keep the Ritual", "intention": "Close this program and keep the doorway to rest.", "session": { "kind": "breathing", "method_id": "four_seven_eight", "duration_seconds": 456 } }
+      ]
+    }
+  ]
+}

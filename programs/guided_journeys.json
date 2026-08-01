@@ -1,7 +1,7 @@
 {
   "$schema": "https://eirafocus.com/schemas/programs-v1.json",
   "version": 1,
-  "description": "Single-session guided meditation journeys with timestamped text prompts. v1.0 ships text-only; voice narration is added in v1.1 by adding voice_clip_id to each prompt.",
+  "description": "Single-session guided meditation journeys with timestamped text prompts.",
   "journeys": [
     {
       "id": "body_scan",

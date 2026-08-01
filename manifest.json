@@ -1,8 +1,8 @@
 {
   "$schema": "https://eirafocus.com/schemas/manifest-v1.json",
   "manifest_version": 1,
-  "content_version": "0.1.0",
-  "updated_at": "2026-05-18",
+  "content_version": "0.2.0",
+  "updated_at": "2026-08-01",
   "description": "Top-level content bundle manifest. Apps pin a manifest_version (major) and lazily fetch content listed below. Audio files cached on first play.",
   "data": {
     "breathing_methods": "data/breathing_methods.json",
@@ -11,7 +11,8 @@
     "text_prompts":      "data/text_prompts.json"
   },
   "programs": {
-    "guided_journeys": "programs/guided_journeys.json"
+    "guided_journeys": "programs/guided_journeys.json",
+    "multi_day": "programs/multi_day.json"
   },
   "audio": {
     "legacy": {
@@ -26,12 +27,21 @@
     },
     "ambient": {
       "tier": "free_and_plus",
-      "note": "Pixabay-sourced loops. Files added in subsequent commits.",
-      "files": []
+      "note": "Normalized ambient loops. Rain and Drift are free; the app gates the remaining six as Plus.",
+      "files": [
+        "audio/ambient/eira_ambient_rain.m4a",
+        "audio/ambient/eira_ambient_drift.m4a",
+        "audio/ambient/eira_ambient_stream.m4a",
+        "audio/ambient/eira_ambient_ocean.m4a",
+        "audio/ambient/eira_ambient_forest.m4a",
+        "audio/ambient/eira_ambient_hearth.m4a",
+        "audio/ambient/eira_ambient_night.m4a",
+        "audio/ambient/eira_ambient_cavern.m4a"
+      ]
     },
     "voice": {
       "tier": "free_and_plus",
-      "note": "Azure Neural HD TTS pre-rendered clips. Voices: en-US-Ava, en-US-Andrew, en-IN-Neerja, en-IN-Prabhat. Files added in subsequent commits.",
+      "note": "Voice narration is not part of the 2.0 release.",
       "files": []
     }
   },
